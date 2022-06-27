@@ -1,0 +1,209 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style:none;
+    font-family:sans-serif;
+}
+
+header{
+    position:relative;
+    margin:auto;
+    width: 1000px;
+    height: 90px;  
+    background: linear-gradient(to top, #000000 0%, #808080 100%);
+    color: white;
+}
+#logo{
+    position:absolute; 
+    float: left;  
+    top:10px; 
+    left: 15px; 
+    width:188px; 
+    background:transparente;
+    font-size:1.5em;
+}
+#title{
+    margin: auto;
+    width: 40%;
+}
+
+nav{
+    position:relative;
+    margin:auto;
+    width: 1000px;
+    height: 45px;  
+    background:rgba(37, 37, 37, 0.5);  
+}
+ 
+nav ul{     
+    position:absolute;
+    top:0px;
+    left:0px;
+    width: 1000px; 
+    height: 45px; 
+    background:rgba(37, 37, 37, 0.5);
+    border-bottom: 1px solid red;
+}
+
+nav ul li{  
+float: left;  
+width: 121px;  
+line-height: 44px; 
+text-align-last: center;
+font: size 12px;
+color: white; 
+background:rgba(37, 37, 37, 0.5);
+border-right: 1px solid white;
+border-bottom: 1px solid red;
+}
+.pointer {
+    cursor: pointer;
+}
+
+#bottom{
+    display: frex;
+    margin:auto;
+    width: 1000px; 
+     height: 145px;  
+
+}
+
+#bottom ul{
+    display: flex;
+    align-items: inline;
+    margin: auto;
+    width: 1000px;
+    height: 145px;  
+    padding: 1px; 
+    }
+
+ #bottom ul li{ 
+    display: inline;
+    list-style-position: inside;    
+    width: 225px;
+    height: 145px;
+    padding: 25px;  
+    background:rgba(7, 7, 7, 1); 
+}
+#bottom ul li h1{
+    margin:auto;
+    color: rgb(250, 247, 245);
+    font-size: 18px;
+    font-weight: 100;
+}
+#bottom ul li ol{
+    list-style-position: inside;
+    top: 15px;
+    left: 17px;
+    width: 240px;
+    height: auto;
+    margin:auto;
+
+}
+#bottom ul li ol li{
+    height: auto;
+    margin:auto;
+}
+
+.flower{
+    
+    font-family: 'Indie Flower', cursive;
+
+}
+.flowerOrange{
+    
+    font-family: 'Indie Flower', cursive;
+    color: orangered;
+
+}
+.flowerRed{
+    
+    font-family: 'Indie Flower', cursive;
+    color: red;
+
+}
+h1,h2,h3, h4, h5,h6,p{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.margin{
+    margin: 1%;
+}
+#nav{
+    border-bottom: 1px solid red;
+}
+/*diseño web Mobile First con media queries */
+@media (min-width: 600px){
+    #nav{
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+    }
+}
+@media (min-width: 600px){
+   #logo{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media (min-width: 600px){
+    #title{
+        display: grid;
+        grid-template-columns: 3 repeat(5, 1fr);
+    }
+}
+@media (min-width: 600px){
+   #bottom{
+        display: grid;
+        grid-template-columns: repeat(12, 3fr);
+    }
+}
+.social {
+    min-width: 200px;
+    min-height: 99px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .social a {
+    font-size:18px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, .5);
+    transition: all .2s ease-in-out;
+  }
+
+  .social a:hover {
+    transform: scale(1.5);
+  }
+  
+  .important{
+      color:white;
+  }
+  
+  .important:hover{
+      color:red;
+      transform: scale(1.2);
+  }
+
+  .goBack-Btn{
+    border-radius: 10px;
+    font-family: Source Sans Pro,sans-serif;
+    font-size: 18px;
+    font-weight:600;
+    background-color:orangered;
+    color:#fff;
+    border-radius:50px;
+    padding:10px 40px;   
+    cursor: pointer; 
+    } 
+  .goBack-Btn:hover{        
+    transform: scale(1.1);
+    color: rgb(247, 218, 165);
+} 
